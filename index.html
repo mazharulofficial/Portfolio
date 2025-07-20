@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. Mazharul Islam - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Background Image Path */
+            background-image: url('assets/shawonbg.jpg');
+            background-size: cover;
+            /* Changed background-position to prevent cropping the top of the image */
+            background-position: center top;
+            background-attachment: fixed;
+        }
+        /* Background overlay for better text readability */
+        .bg-overlay {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+        /* Glassmorphism effect for sections */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            /* Added transition for hover effect */
+            transition: all 0.3s ease-in-out;
+        }
+        /* Hover animation for cards */
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.12);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            left: -2.7rem;
+            top: 0.25rem;
+            background-color: #14b8a6; /* teal-500 */
+            border: 3px solid #5eead4; /* teal-300 */
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <!-- Main Wrapper with Overlay -->
+    <div class="bg-overlay min-h-screen">
+
+        <!-- Header/Navigation -->
+        <header class="p-4 md:p-6 sticky top-0 z-50 glass-card">
+            <div class="container mx-auto flex justify-between items-center">
+                <h2 class="text-2xl font-bold">MD. Mazharul Islam</h2>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-cyan-400 transition duration-300">Home</a>
+                    <a href="#about" class="hover:text-cyan-400 transition duration-300">About</a>
+                    <a href="#skills" class="hover:text-cyan-400 transition duration-300">Skills</a>
+                    <a href="#experience" class="hover:text-cyan-400 transition duration-300">Experience</a>
+                    <a href="#education" class="hover:text-cyan-400 transition duration-300">Education</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition duration-300">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Container -->
+        <div class="container mx-auto p-4 md:p-8">
+
+            <!-- Home Section -->
+            <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center -mt-16">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-2">MD. MAZHARUL ISLAM</h1>
+                <p class="text-xl md:text-2xl text-cyan-300 font-medium mb-8">Accounting & Management Professional</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                    <!-- Download CV Button -->
+                    <a href="assets/cv of shawon.pdf" download="CV_of_MD_Mazharul_Islam.pdf" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <!-- Hire Me Button -->
+                    <a href="#contact" class="bg-transparent border-2 border-cyan-500 hover:bg-cyan-500 text-cyan-400 hover:text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+                        <i class="fas fa-paper-plane"></i> Hire Me
+                    </a>
+                </div>
+            </section>
+
+            <!-- About Me Section -->
+            <section id="about" class="py-20">
+                <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+                <div class="glass-card rounded-2xl p-8 md:p-12 flex flex-col lg:flex-row items-center gap-8 md:gap-12">
+                    <!-- Profile Picture -->
+                    <div class="w-48 h-48 md:w-60 md:h-60 flex-shrink-0">
+                        <img src="assets/shawonpass.jpg" alt="MD. Mazharul Islam Profile Picture" class="rounded-full w-full h-full object-cover border-4 border-cyan-400 shadow-lg">
+                    </div>
+                    <!-- Career Summary -->
+                    <div class="text-center lg:text-left">
+                        <h3 class="text-2xl font-semibold mb-4">Career Summary</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            I am a motivated and detail-oriented accounting professional with over 3 years of experience in income tax preparation, financial reporting, and bookkeeping. Adept at managing client relationships, preparing financial documents, and working under pressure. Proficient in MS Excel and QuickBooks. Currently enhancing practical expertise in accounting software and reporting with a goal to build a stable and rewarding career in finance or administration.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Core Competencies / Skills Section -->
+            <section id="skills" class="py-20">
+                <h2 class="text-4xl font-bold text-center mb-12">Core Competencies</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Management & Accounting Skills -->
+                    <div class="glass-card rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-center mb-6">Management & Accounting</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="flex flex-col items-center text-center">
+                                <i class="fas fa-file-invoice-dollar text-3xl text-cyan-300 mb-2"></i>
+                                <span>Income Tax</span>
+                            </div>
+                             <div class="flex flex-col items-center text-center">
+                                <i class="fas fa-chart-pie text-3xl text-cyan-300 mb-2"></i>
+                                <span>Financial Reporting</span>
+                            </div>
+                             <div class="flex flex-col items-center text-center">
+                                <i class="fas fa-book text-3xl text-cyan-300 mb-2"></i>
+                                <span>Bookkeeping</span>
+                            </div>
+                             <div class="flex flex-col items-center text-center">
+                                <i class="fas fa-handshake text-3xl text-cyan-300 mb-2"></i>
+                                <span>Client Relations</span>
+                            </div>
+                             <div class="flex flex-col items-center text-center">
+                                <i class="fas fa-chart-line text-3xl text-cyan-300 mb-2"></i>
+                                <span>Data Analysis</span>
+                            </div>
+                             <div class="flex flex-col items-center text-center">
+                                <i class="fas fa-tasks text-3xl text-cyan-300 mb-2"></i>
+                                <span>Project Management</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Computer & Software Skills -->
+                    <div class="glass-card rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold text-center mb-6">Computer & Software</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                             <div class="flex flex-col items-center text-center">
+                                <i class="fas fa-file-excel text-3xl text-cyan-300 mb-2"></i>
+                                <span>MS Excel</span>
+                            </div>
+                             <div class="flex flex-col items-center text-center">
+                                <i class="fas fa-file-powerpoint text-3xl text-cyan-300 mb-2"></i>
+                                <span>MS PowerPoint</span>
+                            </div>
+                             <div class="flex flex-col items-center text-center">
+                                <i class="fas fa-calculator text-3xl text-cyan-300 mb-2"></i>
+                                <span>QuickBooks</span>
+                            </div>
+                            <div class="flex flex-col items-center text-center">
+                                <i class="fab fa-adobe text-3xl text-cyan-300 mb-2"></i>
+                                <span>Adobe Photoshop</span>
+                            </div>
+                             <div class="flex flex-col items-center text-center">
+                                <i class="fas fa-bullhorn text-3xl text-cyan-300 mb-2"></i>
+                                <span>Digital Marketing</span>
+                            </div>
+                             <div class="flex flex-col items-center text-center">
+                                <i class="fas fa-brain text-3xl text-cyan-300 mb-2"></i>
+                                <span>Avid Learner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Work Experience Section -->
+            <section id="experience" class="py-20">
+                <h2 class="text-4xl font-bold text-center mb-12">Work Experience</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Job 1 -->
+                    <div class="glass-card rounded-2xl p-8">
+                        <p class="text-sm font-medium text-cyan-300 mb-1">August 2022 - June 2025</p>
+                        <h3 class="text-xl font-semibold text-white mb-1">Executive- Income Tax Preparer</h3>
+                        <p class="text-md text-gray-400 mb-3">Advocate A.R. Babul</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Prepared and maintained Income Tax Returns and files.</li>
+                            <li>Calculated tax amounts and submitted returns.</li>
+                            <li>Developed and implemented tax planning strategies.</li>
+                            <li>Answered client audit queries in a timely manner.</li>
+                        </ul>
+                    </div>
+                    <!-- Job 2 -->
+                    <div class="glass-card rounded-2xl p-8">
+                        <p class="text-sm font-medium text-cyan-300 mb-1">June 2020 - May 2022</p>
+                        <h3 class="text-xl font-semibold text-white mb-1">Assistant Accountant (Part-Time)</h3>
+                        <p class="text-md text-gray-400 mb-3">M/S Shawon Enterprise</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Organized all company accounts and bank transactions.</li>
+                            <li>Reduced paper usage by switching to e-bills.</li>
+                            <li>Built and maintained strong client relationships.</li>
+                            <li>Kept accurate records for inventory and accounts.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education & Training Section -->
+            <section id="education" class="py-20">
+                <h2 class="text-4xl font-bold text-center mb-12">Education & More</h2>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Academic Qualification -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-center mb-8">Academic Qualification</h3>
+                        <div class="relative pl-12 border-l-2 border-cyan-800">
+                            <!-- MBA -->
+                            <div class="mb-8 timeline-item">
+                                <h4 class="text-xl font-semibold">Master of Business Administration (MBA)</h4>
+                                <p class="text-cyan-300">Kabi Nazrul Govt. College</p>
+                                <p class="text-sm text-gray-400">2022 | CGPA: 3.28</p>
+                            </div>
+                            <!-- BBA -->
+                            <div class="mb-8 timeline-item">
+                                <h4 class="text-xl font-semibold">Bachelor of Business Administration (BBA)</h4>
+                                <p class="text-cyan-300">Kabi Nazrul Govt. College</p>
+                                <p class="text-sm text-gray-400">2021 | CGPA: 2.80</p>
+                            </div>
+                            <!-- HSC -->
+                            <div class="mb-8 timeline-item">
+                                <h4 class="text-xl font-semibold">HSC (Business Studies)</h4>
+                                <p class="text-cyan-300">Govt. Tolaram College</p>
+                                <p class="text-sm text-gray-400">2017 | GPA: 3.92</p>
+                            </div>
+                            <!-- SSC -->
+                            <div class="timeline-item">
+                                <h4 class="text-xl font-semibold">SSC (Business Studies)</h4>
+                                <p class="text-cyan-300">IET Govt. High School</p>
+                                <p class="text-sm text-gray-400">2015 | GPA: 3.83</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Training & Volunteer -->
+                    <div class="space-y-10">
+                         <div>
+                            <h3 class="text-2xl font-bold text-center mb-8">Training Summary</h3>
+                            <div class="glass-card rounded-2xl p-8 text-center">
+                                <i class="fas fa-laptop-code text-4xl text-cyan-300 mb-3"></i>
+                                <h4 class="text-xl font-semibold">Computer Application</h4>
+                                <p class="text-cyan-300">Narayanganj Youth Training Academy (NYTA)</p>
+                                <p class="text-sm text-gray-400">2022 | 3 Months</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-center mb-8">Volunteer Experience</h3>
+                            <div class="glass-card rounded-2xl p-8 text-center">
+                                <i class="fas fa-hands-helping text-4xl text-cyan-300 mb-3"></i>
+                                <h4 class="text-xl font-semibold">Program Coordinator</h4>
+                                <p class="text-cyan-300">Onisso (Oder Niye Shopno) Non-Profit Organization</p>
+                                <p class="text-sm text-gray-400">Sep 2018 - Dec 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact Section -->
+            <section id="contact" class="py-20 text-center">
+                 <h2 class="text-4xl font-bold text-center mb-8">Get In Touch</h2>
+                 <p class="max-w-2xl mx-auto text-gray-300 mb-8">
+                    I'm currently available for new opportunities. If you have a project or a role you'd like to discuss, feel free to reach out.
+                 </p>
+                 <div class="glass-card rounded-2xl p-8 max-w-md mx-auto">
+                     <p class="text-lg font-semibold">MD. MAZHARUL ISLAM</p>
+                     <div class="my-4 space-y-2">
+                        <a href="mailto:mdmazharulofficial@gmail.com" class="flex items-center justify-center gap-3 text-cyan-300 hover:text-cyan-400 text-lg">
+                            <i class="fas fa-envelope"></i>
+                            <span>mdmazharulofficial@gmail.com</span>
+                        </a>
+                        <a href="tel:01990855388" class="flex items-center justify-center gap-3 text-cyan-300 hover:text-cyan-400 text-lg">
+                            <i class="fas fa-phone"></i>
+                            <span>01990-855388</span>
+                        </a>
+                         <p class="flex items-center justify-center gap-3 text-gray-300 text-lg">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Narayanganj, Bangladesh</span>
+                         </p>
+                     </div>
+                     <!-- Social Links -->
+                     <div class="mt-6 pt-4 border-t border-white/20 flex justify-center gap-6">
+                        <a href="https://www.linkedin.com/in/mazharulislam-bd/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110">
+                            <i class="fab fa-linkedin-in text-2xl"></i>
+                        </a>
+                        <a href="https://x.com/mazharul_sh" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300 transform hover:scale-110">
+                            <i class="fab fa-x-twitter text-2xl"></i>
+                        </a>
+                     </div>
+                 </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center py-6 text-gray-400">
+            <p>&copy; 2025 MD. Mazharul Islam. All Rights Reserved.</p>
+           <p class="text-sm mt-2">Developed by <a href="https://www.linkedin.com/in/anikhofficial/" target="_blank" class="underline hover:text-blue-400 transition-colors">Anik Hasan</a></p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
